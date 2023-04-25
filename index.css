@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +15,7 @@ body {
     background-color: #E8DAFF;
 }
 
+/*==========NAV========*/
 nav {
     display: flex;
     width: 100%;
@@ -22,7 +26,6 @@ nav {
     background-color: #E8DAFF;
 }
 
-
 nav ul {
     display: flex;
     width: 50%;
@@ -31,9 +34,10 @@ nav ul {
 
 nav a {
     color:black;
-    font-size: 12px;
+    font-size: 14px;
 }
 
+/*========HOME========*/
 #home {
     display: flex;
     height: 100vh;
@@ -49,7 +53,7 @@ nav a {
     align-items: center;
 }
 
-.texto {
+#texto-home {
     display: grid;
     gap: 4px;
 }
@@ -67,13 +71,65 @@ img#imagem-home{
     height: 300px;
 }
 
-section {
+section:not(#home) {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
     border: 1px solid black;
 }
 
+/*=========LAYOUT GERAL========*/
+.titulo {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
 
+.titulo h1 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+.conteudo {
+    display: flex;
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*========PROJETOS========*/
+.projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 0 0 0 5%;
+    transition: 0.3s ease;
+}
+
+.projeto img {
+    width: 400px;
+}
+
+.projeto p {
+    color: black;
+    letter-spacing: 1px;
+}
+
+.projeto:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*========CONTATO========*/
