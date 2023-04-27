@@ -22,7 +22,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding: 10 50 10 50;
+    padding: 15 50 15 50;
     background-color: #E8DAFF;
 }
 
@@ -34,7 +34,15 @@ nav ul {
 
 nav a {
     color:black;
-    font-size: 14px;
+    padding: 5 15;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+    background-color: black;
+    color: white;
+
 }
 
 /*========HOME========*/
@@ -55,7 +63,13 @@ nav a {
 
 #texto-home {
     display: grid;
-    gap: 4px;
+    gap: 20px;
+    letter-spacing: 1px;
+    margin-left: 100px;
+}
+
+#texto-home h1 {
+    font-size: 30px;
 }
 
 .container-imagem-home {
@@ -66,11 +80,15 @@ nav a {
     align-items: center;
 }
 
-img#imagem-home{
-    width: 300px;
-    height: 300px;
+#imagem-home {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 60%;
+    border:rgba(255, 255, 255, 0.6) 20px solid;
+    
 }
-
 
 /*=========LAYOUT GERAL========*/
 
@@ -107,41 +125,59 @@ section:not(#home) {
     
 }
 /*========SOBRE==========*/
+.container-imagem-sobre {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#polaroid {
+    background-color: rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    align-items: center;
+    padding: 20 20 80 20;
+    margin-right: 150px;
+    border-radius: 2px;
+}
+
+#imagem-sobre{
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
 
 .container-texto-sobre {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 #texto-sobre {
     background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    margin-left: 100px;
+    border-radius: 4px;
 }
 
-.container-imagem-sobre {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#texto-sobre p {
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
-img#imagem-sobre{
-    width: 300px;
-    height: 300px;
-}
 /*========PROJETOS========*/
 .projeto {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 5px;
     background-color: white;
-    border-radius: 0 0 0 5%;
+    border-radius: 0 5% 0 5%;
     transition: 0.3s ease;
 }
 
