@@ -22,7 +22,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding: 10 0 10 50;
+    padding: 10 50 10 50;
     background-color: #E8DAFF;
 }
 
@@ -40,14 +40,14 @@ nav a {
 /*========HOME========*/
 #home {
     display: flex;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 .container-texto-home {
-    height: 100%;
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,56 +59,84 @@ nav a {
 }
 
 .container-imagem-home {
-
-    height: 100%;
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 img#imagem-home{
+    width: 300px;
     height: 300px;
 }
+
+
+/*=========LAYOUT GERAL========*/
 
 section:not(#home) {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
-    border: 1px solid black;
 }
 
-/*=========LAYOUT GERAL========*/
 .titulo {
     display: flex;
     width: 30px;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
     border-bottom: 2px solid black;
 }
 
 .titulo h1 {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
 
 .conteudo {
     display: flex;
-    height: 90%;
     width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+/*========SOBRE==========*/
+
+.container-texto-sobre {
+    width: 50%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#texto-sobre {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.container-imagem-sobre {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#imagem-sobre{
+    width: 300px;
+    height: 300px;
+}
 /*========PROJETOS========*/
 .projeto {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
@@ -119,6 +147,7 @@ section:not(#home) {
 
 .projeto img {
     width: 400px;
+
 }
 
 .projeto p {
@@ -133,3 +162,82 @@ section:not(#home) {
 }
 
 /*========CONTATO========*/
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 60%;
+    justify-content: space-evenly;
+}
+
+input {
+    height: 30px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+input,textarea:focus-within {
+    outline: none;
+}
+
+#botao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer a{
+    color: black;
+}
+
+footer i{
+    font-size: 40px;
+}
+footer p {
+    font-size: 12px;
+    margin-top: 20px;
+}

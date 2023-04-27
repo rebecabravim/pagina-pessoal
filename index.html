@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Rebeca Bravim</title>
 </head>
@@ -47,7 +48,17 @@
         <div class="titulo">
             <h1>SOBRE</h1>
         </div>
-        <div class="conteudo"></div>
+        <div class="conteudo">
+            <div class="container-imagem-sobre">
+                <img id=imagem-home src="imagem.png" alt="minha foto">
+            </div>
+            <div class="container-texto-sobre">
+                <div id="texto-sobre">
+                    <h4>Olá, eu sou</h4>
+                    <h1>Rebeca Bravim,</h1>
+                    <h4>Universitária e futura Cientista da Computação.</h4>
+                </div>
+        </div>
     </section>
     <!-- FINAL DO SOBRE -->
 
@@ -57,7 +68,7 @@
             <h1>PROJETOS</h1>
         </div>
         <div class="conteudo">
-            <a href="adicionar githubi pages">
+            <a href="#">
                 <div class="projeto">
                     <img src="projeto-capa.png" alt="projeto">
                     <p>Personal Website</p>
@@ -75,25 +86,24 @@
         </div>
         <div class="conteudo">
             <div id="formulario">
-                <div id="nome"></div>
-                <div id="email"></div>
-                <div id="mensagem"></div>
-
-                <form action="">
-                    <label for="nome">Nome</label>
-                    <input type="text">
-                    <br>
-                    <label for="email">Email</label>
-                    <input type="text">
-                    <br>
-                    <label for="mensagem">Mensagem</label>
-                    <input type="text">
-                </form>
-                <button>ENVIAR</button>
-        </div>
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="mensagem" placeholder="Mensagem" cols="50" rows="10"></textarea>
+                <div id="botao">
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </div>
     </section>
     <!-- FINAL DO CONTATO -->
+
     <footer>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+
+        </ul>
+        <p>Create By Rebeca</p>
     </footer>
 
 </body>
